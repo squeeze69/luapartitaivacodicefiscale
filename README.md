@@ -11,7 +11,8 @@ Porting basato sulle informazioni pubblicate da Umberto Salsi su [Icosaedro](htt
 
 ## Verifica del codice di controllo del codice fiscale e della partita iva
 
-Suggerisco, semplicemente, di esaminare i file di test:
+Per capire l'uso, suggerisco, semplicemente, di esaminare i file di test:
 
 codicefiscale_test.lua
+
 partitaiva_test.lua
