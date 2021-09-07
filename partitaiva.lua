@@ -24,7 +24,7 @@ function partitaiva( p)
 		return false,"Lunghezza sbagliata"
 	end
 	local primo=0
-	local secondo=0
+	local secondo
 	for i = 1,10,2 do
 		local v = tonumber(string.sub(p,i,i))
 		if v == nil then

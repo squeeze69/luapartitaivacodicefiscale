@@ -27,7 +27,7 @@ function codicefiscale(cfin)
 	end
 	-- string.upper dovrebbe andare da lua 5.0 in su
 	cfin = string.upper(cfin)
-	
+
 	-- decodifica caratteri codice fiscale
 	local tcf ={["0"]=1, ["1"]=0, ["2"]=5, ["3"]=7, ["4"]=9, ["5"]=13, ["6"]=15, ["7"]=17, ["8"]=19,
 		["9"]=21, ["A"]=1, ["B"]=0, ["C"]=5, ["D"]=7, ["E"]=9, ["F"]=13, ["G"]=15, ["H"]=17,
@@ -50,11 +50,11 @@ function codicefiscale(cfin)
 	for i=1,13,2 do
 		local v = tcf[string.sub(cfin,i,i)]
 		if v == nil then
-			return false,"Carattere non accettabile"	
+			return false,"Carattere non accettabile"
 		end
 		local o = ordv[string.sub(cfin,i+1,i+1)]
 		if o == nil then
-			return false,"Carattere non accettabile"	
+			return false,"Carattere non accettabile"
 		end
 		s = s + v + o
 	end
